@@ -45,3 +45,24 @@ This is a C-based **Sudoku Solver** that uses backtracking to solve 9x9 Sudoku p
    ```
 
 The program will read the `sudoku.txt` file, solve the puzzle, and print the solved puzzle along with the time it took to solve.
+
+## Future Updates
+
+The following features are planned for future development to enhance the functionality and versatility of the Sudoku Solver:
+
+### 1. Difficulty Levels
+   - Implement a feature that calculates the **difficulty level** of the Sudoku puzzle based on the number of clues (filled cells) in the initial grid.
+   - Difficulty levels will be categorized into:
+     - **Easy**: More than 40 clues
+     - **Medium**: Between 30 to 40 clues
+     - **Hard**: Between 20 to 30 clues
+     - **Expert**: Less than 20 clues
+   - The solver will analyze the complexity of the puzzle-solving process to further adjust the difficulty level dynamically (based on factors like required backtracking and dead-ends encountered).
+
+### 2. Puzzle Generator
+   - Add a feature to **generate new Sudoku puzzles** of varying difficulty levels.
+   - The puzzle generator will ensure that:
+     - Each puzzle has a unique solution.
+     - The number of clues can be adjusted to match the desired difficulty level (Easy, Medium, Hard, Expert).
+     - The generated puzzles will adhere to Sudoku's rules, ensuring valid row, column, and box constraints.
+   - The generator will be based on **randomization techniques** with backtracking to ensure that puzzles are properly solvable, maintaining difficulty balance.
